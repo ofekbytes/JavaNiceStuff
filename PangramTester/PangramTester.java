@@ -10,30 +10,50 @@ public class PangramTester {
 	
 	public String findMissingLetters(String sentence) {
 
+	      //making String to Char Array - letters template a - z.	
 		  final char[] alphabetArray = "abcdefghijklmnopqrstuvwxyz".toCharArray();
 
+		  //using <TreeSet> to find the lost letters - by order.
 		  final TreeSet alphabetTreeSet = new TreeSet();
 
-		  // toLowerCase
+		  // toLowerCase the method/function parameter "sentence" 
 		  final char[] sentenceChar = sentence.toLowerCase().toCharArray();
 
-		  // char enterd list
+		  // copy array String to "letter"  and add them to <alphabetTreeSet>
 		  for (final char letter : sentenceChar) {
 		   alphabetTreeSet.add(letter);
 		  }
 		  
-		  // loop a-z and check if latter entered not exit, and make a list (in order)
+		  // StringBuilder - used to contain the missing letters
 		  final StringBuilder missingCharBuilder = new StringBuilder();
+		  
+		  // for loop - "character" get letter by letter (a-z)
 		  for (final char character : alphabetArray) {
+		   //check  "alphabetTreeSet" ("sentence") not equal to the character template "character" ("alphabetArray")
 		   if (!alphabetTreeSet.contains(character)) {
+			//if ture add them to the list in "missingCharBuilder" (module for enormous string.
 		    missingCharBuilder.append(character);
 		   }
 		  }
+		  // return the missing letters in "sentence"
 		  return missingCharBuilder.toString();
 		  
 		 }
 
-	
+		 // print Result to screen
+		 public void PrintTemplateResult(String StResult)
+		 {
+			    if (StResult.length() == 0)
+			    {
+			    	System.out.println("NULL");
+			    }
+			    else if (StResult.length() > 0)
+			    {
+			    	System.out.println(StResult);
+			    }   
+		 }
+		 
+		 
 	public static void main(String[] args)  throws IOException {
 
 		
@@ -44,8 +64,10 @@ public class PangramTester {
 	    String s;
 	    while ((s = in.readLine()) != null) {
 	    
-	    stMissingLatter =  t.findMissingLetters(s);	
-	   
+	    stMissingLatter =  t.findMissingLetters(s);
+	    
+	    //t.PrintTemplateResult(stMissingLatter);
+	    
 	    System.out.println("missing latter are: "  + stMissingLatter);
 	    }
 
