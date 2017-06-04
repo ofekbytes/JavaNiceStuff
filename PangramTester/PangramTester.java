@@ -1,4 +1,4 @@
-package test;
+package PangramTester;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -66,9 +66,9 @@ public class PangramTester {
 	    
 	    stMissingLatter =  t.findMissingLetters(s);
 	    
-	    //t.PrintTemplateResult(stMissingLatter);
+	    t.PrintTemplateResult(stMissingLatter);
 	    
-	    System.out.println("missing latter are: "  + stMissingLatter);
+	    //System.out.println("missing latter are: "  + stMissingLatter);
 	    }
 
 	}

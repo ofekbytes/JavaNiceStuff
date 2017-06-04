@@ -1,4 +1,4 @@
-package test;
+package PangramTester;
 
 import java.io.*;
 import java.io.BufferedReader;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.TreeSet;
 
-public class Main {
+public class PangramTester2 {
     
   	public String findMissingLetters(String sentence) {
 
@@ -36,7 +36,7 @@ public class Main {
     
   public static void main(String[] args) throws IOException {
  			String  stMissingLatter = null;
-		Main t = new Main();
+		PangramTester2 t = new PangramTester2();
 		
 	    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 	    String s;
