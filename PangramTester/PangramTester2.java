@@ -34,26 +34,26 @@ public class PangramTester2 {
 		 }  
     
     
-  public static void main(String[] args) throws IOException {
- 			String  stMissingLatter = null;
-		PangramTester2 t = new PangramTester2();
-		
-	    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-	    String s;
-	    while ((s = in.readLine()) != null) {
-	    
-	    stMissingLatter =  t.findMissingLetters(s);	
-	    
-	    if (stMissingLatter.length() == 0)
-	    {
-	    	System.out.println("NULL");
-	    }
-	    else if (stMissingLatter.length() > 0)
-	    {
-	    	System.out.println(stMissingLatter);
-	    }   
-      
-      
-    }
-  }
+//  public static void main(String[] args) throws IOException {
+// 			String  stMissingLatter = null;
+//		PangramTester2 t = new PangramTester2();
+//		
+//	    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+//	    String s;
+//	    while ((s = in.readLine()) != null) {
+//	    
+//	    stMissingLatter =  t.findMissingLetters(s);	
+//	    
+//	    if (stMissingLatter.length() == 0)
+//	    {
+//	    	System.out.println("NULL");
+//	    }
+//	    else if (stMissingLatter.length() > 0)
+//	    {
+//	    	System.out.println(stMissingLatter);
+//	    }   
+//      
+//      
+//    }
+//  }
 }

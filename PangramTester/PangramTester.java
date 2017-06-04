@@ -54,24 +54,24 @@ public class PangramTester {
 		 }
 		 
 		 
-	public static void main(String[] args)  throws IOException {
+//	public static void main(String[] args)  throws IOException {
+//
+//		
+//		String  stMissingLatter = null;
+//		PangramTester t = new PangramTester();
+//		
+//	    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+//	    String s;
+//	    while ((s = in.readLine()) != null) {
+//	    
+//	    stMissingLatter =  t.findMissingLetters(s);
+//	    
+//	    t.PrintTemplateResult(stMissingLatter);
+//	    
+//	    //System.out.println("missing latter are: "  + stMissingLatter);
+//	    }
 
-		
-		String  stMissingLatter = null;
-		PangramTester t = new PangramTester();
-		
-	    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-	    String s;
-	    while ((s = in.readLine()) != null) {
-	    
-	    stMissingLatter =  t.findMissingLetters(s);
-	    
-	    t.PrintTemplateResult(stMissingLatter);
-	    
-	    //System.out.println("missing latter are: "  + stMissingLatter);
-	    }
-
-	}
+//	}
 	
 	
 }
