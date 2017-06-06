@@ -50,29 +50,24 @@ public class JavaBasic {
 
 		//++increment++
 		//--decrement--		
-		int prefix_a = 3;
-		System.out.println("prefix_a  === " + "" +  prefix_a);
-		int prefix_b = ++prefix_a;
-		System.out.println("++prefix_a  === " + "" +  prefix_a  + " prefix_b === " + prefix_b);
+		//
+		//prefix
+		int a = 2;
+		int b = ++a; // a=3, b=3
+		System.out.println("prefix >> a = 2, b = ++a ====> a== " + a + " b== " + b);
+		//
+		//postfix
+		int c = 3;
+		int d = c--; // d=3 c=2
+		System.out.println("postfix >> c = 3, d = c-- ====> c== " + c + " d == " + d);
 
-		
-		System.out.println("");
-		
-		
-		int postfix_a = 2;
-		System.out.println("postfix_a  === " + "" +  postfix_a);
-		int postfix_b = postfix_a--;
-		System.out.println("postfix_a  === " + "" +  postfix_a  + " postfix_b === " + postfix_b);
-		
-		
-		
+			
 		JavaBasic jb = new JavaBasic();
 		   intCount = 0;
 		   intCount = intCount + 1;
 		   
-		   System.out.println("\nStatic int intCount === " + intCount);
-		  
-		   
+		   System.out.println("\nStatic int intCount === " + jb.intCount);	  		   
 	}
-
 }
+
+

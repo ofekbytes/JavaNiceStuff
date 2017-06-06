@@ -25,19 +25,20 @@ increment
 decrement
 --test; test--;
 
-prefix: increment / decrement by one and then assing value
-int x = 34;
-int y = ++x; // y= 35;
- 
-postfix increment / decrement
-int x = 34;
-int y = x++; // y= 34;
+//prefix
+int a = 2;
+int b = ++a; // a=3, b=3
+
+//postfix
+int c = 3;
+int d = c--; // d=3 c=2
 
  
 ; ==> semicolons
 ! ==> not
 || ==> logical OR
 && ==> logical AND
+&  ==> logical AND
 
 
  public - 
