@@ -34,6 +34,7 @@ int c = 3;
 int d = c--; // d=3 c=2
 
  
+logical operators - 
 ; ==> semicolons
 ! ==> not
 || ==> logical OR
@@ -43,3 +44,28 @@ int d = c--; // d=3 c=2
 
  public - 
  static - no need for instance of the class
+ 
+ 
+ OOP - 
+ Object-Oriented-Programming.
+ oop have: identity, attributes, behavior.
+ oop attributes - describes the current state of an object
+ example: car move, phone rings.
+ 
+ 
+ CLASS -
+ class is a blue print of a object.
+ each class has a name and each is used to define attributes and behavior.
+  example:
+ attributes: name, age, gender.
+ behavior: walk, run, jump, 
+
+ 
+ Methods - methods definebehavior.
+ method is a collection of statements that group together to perform an operation.
+ example:
+System.out.println();
+ 
+ 
+ 
+ 
