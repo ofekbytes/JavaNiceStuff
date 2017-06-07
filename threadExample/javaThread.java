@@ -25,6 +25,19 @@ public class javaThread extends Thread {
 		
 		
 	}
+
+	
+	public String getPuStName() {
+		return PuStName;
+	}
+
+
+
+	public void setPuStName(String puStName) {
+		PuStName = puStName;
+	}
+
+	
 	
 	public static void main(String [] args)
 	{

@@ -1,9 +1,13 @@
 
 class: every line of code in java need to be in class.
 
-variable:
+variable / value types:
 byte, short, int, long, float, double, boolean
 
+reference types -  
+stores a reference (or address) to the memory location where data stored.
+when you create an object using the constructor you create a reference variable
+reference types example: Array, String  
 
 variables Reserved words:
 abstract, continue, for, new, switch, assert, default, goto, package, synchronized,
@@ -43,14 +47,23 @@ logical operators -
 
 
  public - 
- static - no need for instance of the class
+ static - no need for instance of the class (static belongs to class) declare with uppercase.
+ example:
+ public static int COUNT = 0
  
+ final - final variable is a constant variable assigned only once; (variable with uppercase)
  
  OOP - 
  Object-Oriented-Programming.
  oop have: identity, attributes, behavior.
  oop attributes - describes the current state of an object
  example: car move, phone rings.
+ 
+ 
+ Packages -
+ packages are used to avoid name conflicts and to control access to classes
+ import package to be used in another
+ 
  
  
  CLASS -
@@ -66,6 +79,11 @@ logical operators -
  example:
 System.out.println();
  
+ constructor - is special methods invoked when an object is created. 
+ constructor name must be same as its class name (with no return) 
+ 
+ encapsulation - 
+ (getter, setters)
  
  
  
