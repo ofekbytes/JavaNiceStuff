@@ -1,30 +1,39 @@
 
-//import package "threadExample"
+//import package
 import threadExample.*;
-import utility.MathMethod;
 import utility.counter;
 
-//class: public/private
-public class JavaBasic {
-	 // attributes / variable declaration
+//class: every line of code in java need to be in a "class".
+//class "access modifiers" is public -or- default.
+// public - accessible by any other class
+//   example: Public class javaScript{} 
+// default: class is accessible only by classes in the same package.(left blank)
+//   example: class javaBasic{}
+public class JavaBasicFull {
+	
+	/*
+	 * attributes / variable declaration
+	 * access Modifiers attributes: private/ public/ default/ protected
+	 * private: accessible only within the declared class itself.
+	 * public: accessible from any other class
+	 * default: no access control modifier available to any other class in the same package
+	 * protected: like "default" + subclasses can access protected variable/method of the superclass
+	 */
 	public static int intCount = 0;	//static - belongs to the class, no need for instance of the class. create instance static.
 	private int age;	//ini - integer
 	private String StDescribe;	// String sequence of characters.
 	private boolean flage = false;
 	private char grade = 'A';
+	
+	
 	private static final double PI = 3.1415929; //constant
 	
-	//constructors "JavaBasic"
-	public JavaBasic() {
-		// super constructor
+	//constructors "JavaBasic" - if not exits will be created by java automatically. (all class has constructors)
+	public JavaBasicFull() {
 		//super();
 		// TODO Auto-generated constructor stub
-		System.out.println("constructor say hello");
 	}
 
-	public JavaBasic(int a, int b){
-		System.out.println("constructor a + b ==>" + a + b);
-	}
 	/**
 	 * Methods examples
 	 */
@@ -44,6 +53,23 @@ public class JavaBasic {
 	}
 	
 
+	public void methodPrePostFix(){
+		//++increment++
+		//--decrement--		
+		//
+		//prefix
+		int a = 2;
+		int b = ++a; // a=3, b=3
+		System.out.println("prefix >> a = 2, b = ++a ====> a== " + a + " b== " + b);
+		//
+		//postfix
+		int c = 3;
+		int d = c--; // d=3 c=2
+		System.out.println("postfix >> c = 3, d = c-- ====> c== " + c + " d == " + d);
+
+	}
+	
+	
 	
 	/*
 	 * Getter , Setter
@@ -53,7 +79,7 @@ public class JavaBasic {
 	}
 
 	public static void setIntCount(int intCount) {
-		JavaBasic.intCount = intCount;
+		JavaBasicFull.intCount = intCount;
 	}
 
 	public int getAge() {
@@ -76,22 +102,40 @@ public class JavaBasic {
 	 */
 	
 	
+//	"Math" class "Math.method"
+	public void MathMethod()
+	{
+		
+		System.out.println("\nMath.method: ");
+		System.out.println("Math.abs(10) ==> " + Math.abs(10)); //10
+		System.out.println("Math.abs(10) ==> " + Math.abs(-20)); //20
+		
+		System.out.println("Math.ceil(3.23) ==> " + Math.ceil(3.23)); //4
+		System.out.println("Math.floor(-3.23) ==> " + Math.floor(3.23)); //3
+		
+		System.out.println("Math.max(3,7) ==> " + Math.max(3,7)); //7
+		System.out.println("Math.min(5,3) ==> " + Math.min(5,3)); //3
+		
+		System.out.println("Math.pow(3,2) ==> " + Math.pow(3,2)); //9.0
+		
+		//Math.method more example
+		//Math.sqrt(), Math.sin(), Math.cos(), Math.PI(), Math.random()
+		
+	}
 	
 //1>>	reference type	
-	static void methodChange (JavaBasic j) {
+	static void methodChange (JavaBasicFull j) {
 		j.setAge(333);
 	}
 	
 	public static void BIP(){
 		System.out.print(" bip ");
 	}
-
-	
 	
 	//main method (function) with String Array parameters
 	public static void main(String[] args) {
 		
-		JavaBasic jb = new JavaBasic(); // we created "new object" of a "class". "jb" object of a class "JavaBasic"
+		JavaBasicFull jb = new JavaBasicFull(); // we created "new object" of a "class". "jb" object of a class "JavaBasic"
 		jb.age = 10; //access attributes ags=10;
 		System.out.println(jb.age);
 
@@ -104,14 +148,10 @@ public class JavaBasic {
 		intCount = intCount + 1;
 		System.out.println("\nStatic int intCount === " + jb.intCount);	  		   
 		
-		//object to Math class example
-		MathMethod m = new MathMethod();
+		//Math class example
+		jb.MathMethod();
 		
-		//prefix/postfix (increment/decrement)
-		m.methodPrePostFix();
-		
-		
-		//object to class with static
+		//create new objec to class with static ( "counter,java" )
 		counter c1 = new counter();
 		counter c2 = new counter();
 		
