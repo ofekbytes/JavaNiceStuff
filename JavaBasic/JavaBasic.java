@@ -20,11 +20,11 @@ public class JavaBasic {
 		// super constructor
 		//super();
 		// TODO Auto-generated constructor stub
-		System.out.println("constructor say hello");
+		System.out.println("constructor say i am the first");
 	}
 
 	public JavaBasic(int a, int b){
-		System.out.println("constructor a + b ==>" + a + b);
+		System.out.println("constructor a + b ==>  " + (a + b));
 	}
 	/**
 	 * Methods examples
@@ -93,21 +93,25 @@ public class JavaBasic {
 	
 	//main method (function) with String Array parameters
 	public static void main(String[] args) {
+		//variable
+		//object of our class "jb" "jb2"
+		JavaBasic jb = new JavaBasic(); // we created "new object" of a "class". "jb" object of a class "JavaBasic" (constructor)
+		JavaBasic jb2 = new JavaBasic(11,22); //constructor with 2 parameters/arguments
 		
-		JavaBasic jb = new JavaBasic(); // we created "new object" of a "class". "jb" object of a class "JavaBasic"
 		jb.age = 10; //access attributes ags=10;
 		System.out.println("jb.age ===> "  + jb.age);
+		
 		
 		
 //11>   //before reference change		
 //		System.out.println("reference type jb.age ===>> "+jb.age);
 		
-//1>>	//reference type
+//1>>	//reference type (with Parameters / Arguments inside: "(jb,1)" )
 		methodChange(jb, 1);
 		System.out.println("reference type jb.age ===>> "+jb.age);
 		
 
-//1>>	//reference type
+//1>>	//reference type (Array/String)
 		methodChange(jb, 221);
 		System.out.println("reference type jb.age ===>> "+jb.age);
 		

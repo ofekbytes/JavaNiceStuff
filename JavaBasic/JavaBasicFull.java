@@ -9,6 +9,8 @@ import utility.counter;
 //   example: Public class javaScript{} 
 // default: class is accessible only by classes in the same package.(left blank)
 //   example: class javaBasic{}
+//classes are blue prints used to design objects that contain attributes (variables) and methods (functions).
+//class is blueprint / descriptions/ definitions for an object -or for many objects.
 public class JavaBasicFull {
 	
 	/*
@@ -28,10 +30,11 @@ public class JavaBasicFull {
 	
 	private static final double PI = 3.1415929; //constant
 	
-	//constructors "JavaBasic" - if not exits will be created by java automatically. (all class has constructors)
+	//constructors "JavaBasic" - if not exits will be created by java automatically when object created. (all class has constructors)
 	public JavaBasicFull() {
 		//super();
 		// TODO Auto-generated constructor stub
+		System.out.println("constructor say i am the first");
 	}
 
 	/**
@@ -139,7 +142,7 @@ public class JavaBasicFull {
 		jb.age = 10; //access attributes ags=10;
 		System.out.println(jb.age);
 
-//1>>	reference type
+//1>>	reference type (Array/String)
 		methodChange(jb);
 		System.out.println("reference type jb.age ===>> "+jb.age);
 		

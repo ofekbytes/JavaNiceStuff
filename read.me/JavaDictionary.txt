@@ -64,16 +64,20 @@ logical operators -
  behavior: walk, run, jump, 
 
  
- Methods - methods definebehavior.
+ Methods - define the behavior.
  method is a collection of statements that group together to perform an operation.
  example:
 System.out.println();
  
  
- attributes - 
+ attributes / variable declaration : declared inside the Method/s.
+// public methodExample{
+// 	private int age;	
+//	...
+//}
  
- 
- parameters -
+ Parameters / Arguments: Values passed to a method "(b1,1)"
+ //methodChange(jb, 1);
  
  
  constructor - is special methods invoked when an object is created. 
@@ -92,9 +96,13 @@ System.out.println();
 
  OOP - 
  Object-Oriented-Programming.
+ programming style that intended to make thinks as close to the real world.
+ each object is an independent unit with a unique identity. 
  oop have: identity, attributes, behavior.
+ oop identity - each object is an independent unit.
  oop attributes - describes the current state of an object
  example: car move, phone rings.
+ oop behavior - specific to the object type
  
  
  encapsulation - 
