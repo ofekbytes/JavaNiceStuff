@@ -3,6 +3,7 @@
 import threadExample.*;
 import utility.MathMethod;
 import utility.counter;
+import utility.util;
 
 //class: public/private
 public class JavaBasic {
@@ -77,9 +78,11 @@ public class JavaBasic {
 	
 	
 	
-//1>>	reference type	
-	static void methodChange (JavaBasic j) {
-		j.setAge(333);
+//1>>	//reference type 	
+	static void methodChange (JavaBasic j, int value) {
+		j.age = value;
+		
+	//	j.setAge(333);
 	}
 	
 	public static void BIP(){
@@ -93,16 +96,27 @@ public class JavaBasic {
 		
 		JavaBasic jb = new JavaBasic(); // we created "new object" of a "class". "jb" object of a class "JavaBasic"
 		jb.age = 10; //access attributes ags=10;
-		System.out.println(jb.age);
-
-//1>>	reference type
-		methodChange(jb);
+		System.out.println("jb.age ===> "  + jb.age);
+		
+		
+//11>   //before reference change		
+//		System.out.println("reference type jb.age ===>> "+jb.age);
+		
+//1>>	//reference type
+		methodChange(jb, 1);
 		System.out.println("reference type jb.age ===>> "+jb.age);
+		
+
+//1>>	//reference type
+		methodChange(jb, 221);
+		System.out.println("reference type jb.age ===>> "+jb.age);
+		
 		
 		
  	    intCount = 0;
 		intCount = intCount + 1;
 		System.out.println("\nStatic int intCount === " + jb.intCount);	  		   
+		
 		
 		//object to Math class example
 		MathMethod m = new MathMethod();
