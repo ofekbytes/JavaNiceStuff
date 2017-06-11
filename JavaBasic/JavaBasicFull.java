@@ -19,7 +19,7 @@ public class JavaBasicFull {
 	 * private: accessible only within the declared class itself.
 	 * public: accessible from any other class
 	 * default: no access control modifier available to any other class in the same package
-	 * protected: like "default" + subclasses can access protected variable/method of the superclass
+	 * protected: like "default" + "subclasses" can access protected variable/method of the superclass
 	 */
 	public static int intCount = 0;	//static - belongs to the class, no need for instance of the class. create instance static.
 	private int age;	//ini - integer
@@ -138,6 +138,7 @@ public class JavaBasicFull {
 	//main method (function) with String Array parameters
 	public static void main(String[] args) {
 		
+		
 		JavaBasicFull jb = new JavaBasicFull(); // we created "new object" of a "class". "jb" object of a class "JavaBasic"
 		jb.age = 10; //access attributes ags=10;
 		System.out.println(jb.age);
@@ -146,6 +147,13 @@ public class JavaBasicFull {
 		methodChange(jb);
 		System.out.println("reference type jb.age ===>> "+jb.age);
 		
+		
+		jb.grade = 65;
+		System.out.println("char value ==> 65 == " + jb.grade);
+
+		jb.grade = 66;
+		System.out.println("char value ==> 66 == " + jb.grade);
+
 		
  	    intCount = 0;
 		intCount = intCount + 1;

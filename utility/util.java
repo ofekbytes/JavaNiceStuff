@@ -1,6 +1,6 @@
 package utility;
 
-public class util {
+public class util extends MathMethod {
 
 //	public util() {
 //		// TODO Auto-generated constructor stub
@@ -39,10 +39,39 @@ public class util {
 	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	
 	util u = new util();
 	System.out.println("22" + bsl + "11");
+	
+//	Scanner s = new Scanner(System.in);
+//	
+//	String StrOutput = "";
+//	int intOutput = 0;
+//	
+//	if (s.hasNextLine() == true) {
+//		StrOutput = s.nextLine();
+//	}
+//	else if (s.hasNextInt() == true) {
+//		intOutput = s.nextInt();
+//	}
+//	else
+//		System.out.println("else");
+//	
+//	System.out.println("output result: " );
+//	System.out.println("String = " + StrOutput);
+//	System.out.println("int = " + intOutput);
+//			
+			
+
+	System.out.println("extends MathMethod");
+	MathMethod m = new MathMethod();
+	System.out.println("m.intRandom == " + m.intRandom);
+	m.intRandom = 22;
+	System.out.println("m.intRandom == " + m.intRandom);
+	
+	
+
+	
 	}
 
 }

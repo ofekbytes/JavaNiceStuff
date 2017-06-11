@@ -3,6 +3,8 @@ package utility;
 public class MathMethod {
 
 
+	protected int intRandom = 0;
+	
 	public MathMethod() {
 
 		System.out.println("\nMath.method: ");
