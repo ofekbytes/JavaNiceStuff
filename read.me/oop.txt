@@ -81,7 +81,10 @@ OOP -
 // super.intVariable
 
 
-OOP POLYMORPHISM- 
+OOP POLYMORPHISM-
+refers to the idea of "having many forms"
+occurs when there is a hierarchy of classes related to each other through "inheritance"
+
 
 
 OOP ABSTRACTION -
