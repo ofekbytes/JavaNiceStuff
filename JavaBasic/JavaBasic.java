@@ -128,6 +128,9 @@ public class JavaBasic {
 		//prefix/postfix (increment/decrement)
 		m.methodPrePostFix();
 		
+		//random number
+		m.GenerateRandomNumber(66);
+		
 		
 		//object to class with static
 		counter c1 = new counter();

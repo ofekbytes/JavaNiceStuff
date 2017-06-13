@@ -21,8 +21,19 @@ public class MathMethod {
 		
 		//Math.method more example
 		//Math.sqrt(), Math.sin(), Math.cos(), Math.PI(), Math.random()
+		
 	}
 
+	
+	public void GenerateRandomNumber(int intMaxNumber)
+	{
+		int intRandomNumber= 0;
+		intMaxNumber ++;
+		
+		intRandomNumber = (int) (Math.random()* intMaxNumber);
+		
+		System.out.println("\nRandom number is (0-" + intMaxNumber + " == " + intRandomNumber);
+	}
 
 	
 	public void methodPrePostFix(){
@@ -45,7 +56,9 @@ public class MathMethod {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		MathMethod m =new MathMethod();
+		m.GenerateRandomNumber(99);
+		
 	}
 
 }
